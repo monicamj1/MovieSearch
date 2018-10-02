@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MovieSearch</string>
+    <string name="writer">WRITER</string>
+    <string name="director">DIRECTOR</string>
+    <string name="actors">ACTORS</string>
+</resources>
