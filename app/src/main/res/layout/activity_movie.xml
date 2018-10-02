@@ -113,7 +113,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rule_one"
-        app:srcCompat="@drawable/poster" />
+        app:srcCompat="@color/TitleColor" />
 
     <TextView
         android:id="@+id/description_view"

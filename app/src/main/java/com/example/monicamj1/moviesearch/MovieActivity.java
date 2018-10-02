@@ -2,9 +2,11 @@ package com.example.monicamj1.moviesearch;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.google.gson.Gson;
 
 import java.io.IOException;
@@ -26,6 +28,7 @@ public class MovieActivity extends AppCompatActivity {
     private TextView director_view;
     private TextView writer_view;
     private TextView actors_view;
+    private ImageView poster_view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,5 +64,10 @@ public class MovieActivity extends AppCompatActivity {
         writer_view.setText(movie.getWriter());
         actors_view.setText(movie.getActors().replace(", ", "\n"));
 
+        //poster
+        poster_view = findViewById(R.id.poster_view);
+        Glide.with(this)
+                .load("file:///android_asset/poster.jpg")
+                .into(poster_view);
     }
 }
